@@ -30,7 +30,8 @@ class HumanVsHuman extends Component {
     var fen = axios.get('http://127.0.0.1:8000/api/games/4/',{'headers':{'Access-Control-Allow-Origin': '*', "Content-type": "application/json"}}).then(res => {
       console.log(res)
       // TODO:
-      // convert array game to FEN string and update fen state :
+      // get over CORS
+      // convert array game to FEN string and update fen state:
 
       // this.setState({
         //   fen
