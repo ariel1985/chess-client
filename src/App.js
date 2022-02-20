@@ -1,26 +1,16 @@
-import React, {useState} from 'react';
-import './App.css'
+import "./App.css";
+import Chessboard from "chessboardjsx";
 
-export default function App() {
-  const [stateUserInput, setUserInput] = useState('')
-  
-  function handleInputChange(e) {
-    console.log("input changed to ", e.target.value)
-    setUserInput(e.target.value)
-  }
-
+const App = () => {
   return (
-  <div className="container-fluid">
-    <div className="form-signin form-horizontal centeredBox">
-      <form>
-        <h1 className="header">Welcome!</h1>
-          <input className='form-control' type="text" value={stateUserInput} onChange={handleInputChange} placeholder='Enter Text Code'></input>
-      </form>
-      <hr/>
-      <p>{stateUserInput}</p>
+    <div className="flex-cente r centeredBox">
+      <h1>Chess Game Board</h1>
+      <Chessboard
+        width={400}
+        position="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+      />
     </div>
-  </div>);
-}
+  );
+};
 
-
-
+export default App;
