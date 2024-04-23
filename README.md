@@ -32,6 +32,6 @@ npm start
 
 ## API - after api links done in views
 
-Authentication Fuck!!!
+Authentication
 Game
 Tournement
